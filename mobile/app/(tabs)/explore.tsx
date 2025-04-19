@@ -13,7 +13,7 @@ export default function TabTwoScreen() {
       headerBackgroundColor={{ light: '#f668', dark: '#8a2b2b' }}
       headerImage={
         <IconSymbol
-          size={310}
+          size={0}
           color="#8a2b2b"
           name="chevron.left.forwardslash.chevron.right"
           style={styles.headerImage}
@@ -22,74 +22,31 @@ export default function TabTwoScreen() {
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Extrato</ThemedText>
       </ThemedView>
-      <ThemedText>Farmacia 30,67</ThemedText>
-      <Collapsible title="File-based routing">
-        <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
-        </ThemedText>
-        <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
+      <Collapsible title="18/04/25">
+      <ThemedText>-Farmacia -30,67</ThemedText>
       </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
-        <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
-        </ThemedText>
+      <Collapsible title="15/04/25">
+        <ThemedText>-Netflix -39,90</ThemedText>
+        <ThemedText>-Uber -27,80</ThemedText>
+        <ThemedText>-Mercado Pão de Açúcar -143,75</ThemedText>
       </Collapsible>
-      <Collapsible title="Images">
-        <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
-        </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
+      <Collapsible title="02/04/25">
+      <ThemedText>-Transferência recebida +150,00 </ThemedText>
+      <ThemedText>-Ifood -34,90</ThemedText>
       </Collapsible>
-      <Collapsible title="Custom fonts">
-        <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
-          </ThemedText>
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
+      <Collapsible title="26/03/25">
+      <ThemedText>-Spotify -19,99</ThemedText>
+      <ThemedText>-Padaria Delícia -9,86</ThemedText>
+      <ThemedText>-Transferência recebida + 30,00</ThemedText>
+      <ThemedText>-Academia FitLife -99,99</ThemedText>
       </Collapsible>
-      <Collapsible title="Light and dark mode components">
-        <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Animations">
-        <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText>{' '}
-          library to create a waving hand animation.
-        </ThemedText>
-        {Platform.select({
-          ios: (
-            <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
-            </ThemedText>
-          ),
-        })}
+      <Collapsible title="12/03/25">
+      <ThemedText>-Rappi Supermercado -172,40</ThemedText>
+      <ThemedText>-IFood -59,90</ThemedText>
+     </Collapsible>
+      <Collapsible title="07/03/25">
+      <ThemedText>-Cinema Ingresso.com -32,00 </ThemedText>
+      <ThemedText>-Americanas -26,84 </ThemedText>
       </Collapsible>
     </ParallaxScrollView>
   );

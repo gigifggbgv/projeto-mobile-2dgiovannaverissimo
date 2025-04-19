@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform, TouchableOpacity } from 'react-native';
+import { Image, StyleSheet, Platform, TouchableOpacity, Button, } from 'react-native';
 
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
@@ -10,7 +10,7 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#f668', dark: '#8a2b2b' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
+          source={require('@/assets/images/logobanco2.png')}
           style={styles.reactLogo}
         />
       }>
@@ -23,14 +23,22 @@ export default function HomeScreen() {
        <ThemedText type="defaultSemiBold">1,50</ThemedText> 
         </ThemedText>
       </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Cartões</ThemedText>
-        <ThemedText>
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">pix</ThemedText>
-      </ThemedView>
+      <Button
+  title="cartões"
+  color="#6b2f2f"
+    accessibilityLabel="Seus cartões"
+  
+/>
+      <Button
+  title="poupança"
+  color="#6b2f2f"
+  accessibilityLabel="poupança"
+/>
+<Button
+  title="pix"
+  color="#6b2f2f"
+  accessibilityLabel="pix"
+/>
     </ParallaxScrollView>
   );
 }
@@ -50,10 +58,9 @@ const styles = StyleSheet.create({
     
   },
   reactLogo: {
-    height: 180,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+    height: 300,  
+    width: '100%', 
+    position: 'relative',
+    top: 0, 
   },
 });
